@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/noahbweiss/I3Tolling/issues"
   },
-  "homepage": "https://github.com/noahbweiss/I3Tolling",
+  "homepage": "https://noahbweiss.gihub.io/I3Tolling",
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.12",
     "gh-pages": "^6.3.0",
