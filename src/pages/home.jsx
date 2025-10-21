@@ -1,72 +1,74 @@
+import { NavLink } from "react-router";
 export default function Home() {
   return (
     <div className="text-[#333] bg-[#f9f9f9]">
       {/* Header */}
       <header className="bg-[#004080] text-white py-10 px-5 text-center">
         <h1 className="text-3xl md:text-4xl font-bold">I3 Tolling</h1>
-        <ul className="flex justify-center gap-4 mt-4 space-y-1 text-base md:text-lg leading-relaxed">
-          <li>Reasonable Specifications</li>
-          <li>|</li>
-          <li>Achievable Requirements</li>
-          <li>|</li>
-          <li>Measurable Criteria</li>
-          <li>|</li>
-          <li>Practical Testing</li>
-        </ul>
       </header>
-
-      {/* About */}
-      <section id="about" className="max-w-[1000px] mx-auto px-5 py-10">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">About Us</h2>
-        <p className="text-md leading-7">
-          I3 Tolling provides practical consulting and technical support for tolling and
-          related activities such as congestion pricing, road usage charging (RUC), and parking.
-          We stay current with technology and best practices and rely on human intelligence with
-          over 40 years in the industry to provide precisely the right depth of requirements for
-          each task. I3 Tolling covers virtually every aspect of tolling from pavement to payment
-          including support functions like security, architecture, testing, and training.
-        </p>
-      </section>
 
       {/* Services */}
       <section id="services" className="max-w-[1000px] mx-auto px-5 py-10">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">Our Services</h2>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="bg-white p-5 rounded-lg shadow-lg shadow-grey-900">
-            <h3 className="text-xl font-semibold mb-2">Business Strategy</h3>
-            <p>
-              We help businesses define goals, identify growth opportunities, and create actionable
-              roadmaps for long-term success.
-            </p>
-          </div>
-          <div className="bg-white p-5 rounded-lg shadow-lg shadow-grey-900">
-            <h3 className="text-xl font-semibold mb-2">Process Improvement</h3>
-            <p>
-              Streamline your operations and increase efficiency with our process optimization services.
-            </p>
-          </div>
-          <div className="bg-white p-5 rounded-lg shadow-lg shadow-grey-900">
-            <h3 className="text-xl font-semibold mb-2">Change Management</h3>
-            <p>
-              We guide organizations through change with thoughtful planning, clear communication,
-              and leadership coaching.
-            </p>
-          </div>
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Services
+        </h2>
+
+        <p className="text-lg leading-7 pb-6">
+          I3 Tolling provides practical consulting and technical support for tolling and related
+          activities such as congestion pricing, road usage charging (RUC), and parking. We stay
+          current with technology and best practices and rely on human intelligence with over 40
+          years in the industry to provide precisely the right depth of requirements for each task.
+          I3 Tolling covers virtually every aspect of tolling from pavement to payment including
+          support functions like security, architecture, testing, and training.
+        </p>
+
+        {/*<div className="bg-white shadow rounded-lg p-8">*/}
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+            We will ensure that:
+          </h3>
+          <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
+            <li>Specifications are <span className="font-semibold">Reasonable</span></li>
+            <li>Requirements are <span className="font-semibold">Achievable</span></li>
+            <li>Testing is <span className="font-semibold">Practical</span></li>
+            <li>Performance is <span className="font-semibold">Measurable</span></li>
+          </ul>
+        {/*</div>*/}
+      </section>
+
+      {/* Agencies Served */}
+      <section id="agencies" className="max-w-5xl mx-auto px-6 py-5">
+        <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4">
+          Agencies Served
+        </h2>
+
+        <div className="bg-white shadow rounded-lg p-8">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 text-gray-700 text-md list-disc list-inside">
+            <li>Bay Area Transportation Authority (BATA)</li>
+            <li>Cape May County Bridge Commission (CMCBC)</li>
+            <li>Delaware Department of Transportation (DELDOT)</li>
+            <li>Golden Gate Bridge (GGBHTD)</li>
+            <li>Maine Turnpike Authority (MTA)</li>
+            <li>Massachusetts Department of Transportation (MassDOT)</li>
+            <li>Miami-Dade DOT (DTPW)</li>
+            <li>New Jersey Turnpike Authority (NJTA)</li>
+            <li>New York State Bridge Authority (NYSBA)</li>
+            <li>New York State Thruway Authority (NYSTA)</li>
+            <li>North Carolina Turnpike Authority (NCTA)</li>
+            <li>North Texas Turnpike Authority (NTTA)</li>
+            <li>Oklahoma Turnpike Authority (OTA)</li>
+            <li>Port Authority of New York and New Jersey (PANYNJ)</li>
+            <li>Rhode Island Turnpike and Bridge Authority (RITBA)</li>
+            <li>South Jersey Transportation Authority (SJTA)</li>
+            <li>State Road and Tollway Authority (SRTA)</li>
+            <li>Tampa Hillsborough Expressway Authority (THEA)</li>
+            <li>Thousand Island Bridge Authority (TIBT)</li>
+            <li>Transportation Corridor Agencies (TCA)</li>
+            <li>Valley Transportation Authority (VTA)</li>
+            <li>Virginia Department of Transportation (VDOT)</li>
+          </ul>
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="max-w-[1000px] mx-auto px-5 py-10">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">Contact Us</h2>
-        <p className="mb-4">
-          Interested in learning more about our services? Reach out to us!
-        </p>
-        <p>Email: <a href="mailto:stan@i3tolling.com" className="underline text-blue-700 hover:text-indigo-700">stan@i3tolling.com</a></p>
-        <p>Phone: (914) 489-1244</p>
-        <p>Location: <a href="https://www.google.com/maps/place/7200+Azure+Cir,+Orlando,+FL+32836/@28.4036729,-81.5032913,17z/data=!3m1!4b1!4m6!3m5!1s0x88dd80091343ed29:0xb4976fedbaca0dfb!8m2!3d28.4036682!4d-81.5007164!16s%2Fg%2F11v6wp8wtv?entry=ttu&g_ep=EgoyMDI1MDkwOC4wIKXMDSoASAFQAw%3D%3D"
-           className="underline text-blue-700 hover:text-indigo-700" target="_blank" rel="noopener noreferrer">
-        7200 Azure Circle, Orlando, Florida</a></p>
-      </section>
     </div>
   );
 }
